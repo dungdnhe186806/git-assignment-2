@@ -12,11 +12,15 @@ public class Calculator
     {
         switch (sign)
         {
+            case SIGN.MULTIPLY:
+                return arg1 * arg2;
+
             case SIGN.DIVIDE:
                 return arg2 == 0 ? throw new DivideByZeroException() : arg1 / arg2;
 
             default:
                 return 0;
         }
+
     }
 }
