@@ -12,8 +12,12 @@ public class Calculator
     {
         switch (sign)
         {
+            case SIGN.PLUS:
+                return arg1 + arg2;
+
             default:
                 return 0;
         }
+
     }
 }
